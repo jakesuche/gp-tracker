@@ -1,0 +1,14 @@
+    GET http://localhost:3000/signup
+
+###
+
+POST http://localhost:3000/signup
+body: JSON.stringify()
+Content-Type: application/json
+
+{
+    "name":"joshua",
+    "email":"holla",
+    "password":"swe"
+}
+###

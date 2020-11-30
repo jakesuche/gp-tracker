@@ -1,0 +1,55 @@
+<%- include("partials/headers") -%>
+
+<link rel="stylesheet" href="./css/main.css">
+
+<div id="container">
+
+    <div class="entry">
+        <form action="/mains" method="POST">
+            <label for="">course</label> <br>
+          <input type="text" name="courses" autocomplete="off"> <br>
+
+          <label for="">grade point</label> <br>
+          <input type="text" name="gradePoint" autocomplete="off"> <br>
+           
+          <button type="submit">submit</button>
+
+        </form>
+
+        <hr>
+
+        <table border="1px solid black">
+            <tr>
+                <td>courses</td>
+                <td>grade points</td>
+            </tr>
+
+            <tr>
+                <td>ENG 212</td>
+                <td> 4.4 </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<h1 align="center"> content comming soon</h1> 
+
+<script>/*
+    const form = document.querySelector("form");
+    let courses = form.courses.value;
+    let gradePoint = form.gradePoint.value
+    form.addEventListener("submit", async function(e){
+        e.preventDefault();
+
+        const res = await fetch("/mains",{
+            method:"POST",
+            body:JSON.stringify({courses,gradePoint}),
+            headers:{"Content-Type":"application/json"}
+        })
+
+        const data = await res.json()
+        console.log(data)
+    })*/
+</script>
+<%- include("partials/footers") -%>
