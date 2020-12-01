@@ -18,9 +18,17 @@ let userSchema = new mongoose.Schema({
         type:String,
         minlength:[6,"password should be more than 6 characters "]
     },
-     courses:{
-        type:String
-    }
+     courses:[
+       {
+        courses:{
+            type:String
+        },
+        identifier:{
+            type:String
+        }
+       }
+        
+     ]
 })
 
 

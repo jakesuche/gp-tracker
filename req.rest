@@ -5,10 +5,17 @@
 POST http://localhost:3000/signup
 body: JSON.stringify()
 Content-Type: application/json
-
+//  allways type full address
 {
     "name":"joshua",
-    "email":"holla",
-    "password":"swe"
+    "email":"holla@gmail.com",
+    "password":"swe44444444"
 }
 ###
+
+// this was your mistake add a valid email and a valid password that is not less than 6
+# {
+#     "name":"joshua",
+#     "email":"holla",
+#     "password":"swe"
+# }

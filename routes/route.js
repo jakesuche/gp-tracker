@@ -13,7 +13,7 @@ app.get("/login",permit,controllers.login_get)
 app.post("/login",controllers.login_post)
 
 app.get("/main",requireAuth,controllers.main)
-app.post("/mains",controllers.addData)
+app.post("/mains",requireAuth,controllers.addData)
 
 
 app.get("/logout",controllers.logout)

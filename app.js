@@ -6,6 +6,7 @@ const route  = require("./routes/route")
 
 app.set("view engine","ejs")
 app.use(bodyParser())
+
 app.use(express.static("public"))
 app.use(express.json())
 
